@@ -3,14 +3,34 @@ import FlightSearchCard from './FlightSearchCard'
 import FlightDetailSlider from './FlightDetailSlider'
 import axios from 'axios'
 import { useState } from 'react'
+import Lottie from "lottie-react";
+import animationLooking from './../assets/Animation3.json'
+import FilterSection from './FilterSection'
+
 
 const Main = () => {
+
+  const [UserData,setUserData]=useState({
+    from:'',
+    to:'',
+    date:''
+  })
+  
+  const handleChange=(e)=>{
+  
+    const{name,value}=e.target;
+  
+    setUserData({
+      ...UserData,
+      [name]:value
+    })
+  }
   const [flights,setFlights]=useState([]);
   const [singleData,setSingleData]=useState([]);
   const [loading,setLoading]=useState(true);
 
   const getApiData=async(from,to,date)=>{
-    const response=await axios.get(`https://www.freetestapi.com/api/v1/airlines?limit=5`);
+    const response=await axios.get  (`https://www.freetestapi.com/api/v1/airlines?limit=5`);
 
     if(response.data.length>0){
       setFlights(response.data);
@@ -26,7 +46,14 @@ const Main = () => {
 
     <div className='row'>
       <div className='col-md-8 col-lg-8 col-xl-8 col-sm-12'>
-      <FlightSearchCard getData={getApiData}/>
+      <FlightSearchCard getData={getApiData} 
+      />
+
+      {
+        loading ?<>
+        <Lottie animationData={animationLooking} style={{height:"150px" }}/>
+        </>:<>
+        
       <div className='m-3'>
         {
           loading? <h1>Loading...</h1>: <>
@@ -67,6 +94,11 @@ const Main = () => {
         } */}
       </div>
       <FlightDetailSlider/>
+      </>
+      }
+    </div>
+    <div className='col-md-4 col-lg-4 col-xl-4 col-sm-12'>
+      <FilterSection/>
     </div>
     </div>
   )

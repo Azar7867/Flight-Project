@@ -1,0 +1,42 @@
+.ticket-page {
+    padding: 20px;
+    background: #f8fbff;
+  }
+  
+  .ticket-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .ticket-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    width: 300px;
+  }
+  
+  .ticket-card h3 {
+    margin-top: 0;
+    color: #0077b6;
+  }
+  
+  .ticket-card p {
+    margin: 8px 0;
+  }
+  
+  .book-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #00b894;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-btn:hover {
+    background: #019874;
+  }
+  

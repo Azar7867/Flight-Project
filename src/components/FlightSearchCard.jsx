@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Lottie from "lottie-react";
-import flightAnimation from './../assets/Animation .json'
+import flightAnimation from './../assets/Animation1.json'
 
 
 const FlightSearchCard = ({getData}) => {
@@ -36,7 +36,7 @@ const handleSubmit=(e)=>{
           <div className='col-md-6 col-lg-6 col-xl-6 col-sm12'>
           <Card.Subtitle className="mb-2 ">Where Would You Want To Go</Card.Subtitle>
           {/* <img src="https://5.imimg.com/data5/SELLER/Default/2022/11/XG/XM/IU/148932685/flights-bookings.jpg" className='flight-image'/> */}
-          <Lottie animationData={flightAnimation}/>
+          <Lottie animationData={flightAnimation} style={{height:"300px"}}/>
           </div>
 
           <div className='col-md-6 col-lg-6 col-xl-6 col-sm12'>
