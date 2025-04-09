@@ -19,7 +19,7 @@ const sidebar = () => {
         </div>
         <nav className='sidebar-links w-100'>
         <ul>
-        <li><Link to="/Setting" className="sidebar-link">Setting</Link></li>
+        <li><Link to="/Setting" className="sidebar-link">Settings</Link></li>
         </ul>
         </nav>
         

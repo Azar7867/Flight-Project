@@ -29,12 +29,12 @@ const handleSubmit=(e)=>{
 }
 
   return (
-    <div>
-      <Card className='card-design my-3'>
+    <div className='az'>
+      <Card className='card-design5 my-3'>
       <Card.Body>
         <div className='row'>
           <div className='col-md-6 col-lg-6 col-xl-6 col-sm12'>
-          <Card.Subtitle className="mb-2 ">Where Would You Want To Go</Card.Subtitle>
+          <Card.Subtitle className="mb-2 ">Where Would You Want To Go ?</Card.Subtitle>
           {/* <img src="https://5.imimg.com/data5/SELLER/Default/2022/11/XG/XM/IU/148932685/flights-bookings.jpg" className='flight-image'/> */}
           <Lottie animationData={flightAnimation} style={{height:"300px"}}/>
           </div>
@@ -43,13 +43,13 @@ const handleSubmit=(e)=>{
           <Form onSubmit={(e)=>handleSubmit(e)}>
       <Form.Group className="mb-2" controlId="formBasicEmail">
         <Form.Label>From</Form.Label>
-        <Form.Control type="text" placeholder="Madurai" onChange={handleChange} value={UserData.from} name='from' />
+        <Form.Control type="text" placeholder="Enter From" onChange={handleChange} value={UserData.from} name='from' />
         
       </Form.Group>
 
       <Form.Group className="mb-2" controlId="formBasicPassword">
         <Form.Label>To</Form.Label>
-        <Form.Control type="text" placeholder="Chennai" onChange={handleChange} value={UserData.to} name='to'/>
+        <Form.Control type="text" placeholder="Enter To" onChange={handleChange} value={UserData.to} name='to'/>
       </Form.Group>
       <Form.Group className="mb-2" controlId="formBasicPassword1">
         <Form.Label>Date</Form.Label>

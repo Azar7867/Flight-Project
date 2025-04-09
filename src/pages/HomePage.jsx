@@ -3,7 +3,7 @@ import Sidebar from '../components/sidebar'
 import Main from '../components/Main'
 const HomePage = () => {
   return (
-    <div>
+    <div >
         {/* { sidebar} */}
         <div className='d-flex gap-3'>
         <Sidebar/>

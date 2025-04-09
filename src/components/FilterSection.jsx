@@ -4,7 +4,7 @@ import './FilterSection.css';
 const FilterSection = () => {
   return (
     <div className='h-100'>
-      <Card className='card-design my-3 ' style={{height:"600px"}}>
+      <Card className='card-design3 my-3 ' style={{height:"600px"}}>
       <Card.Body>
         <div className='row'>
             <div className='d-flex justify-content-between align-items-center'>
@@ -17,7 +17,7 @@ const FilterSection = () => {
           <Form >
       <Form.Group className="mb-2" controlId="formBasicEmail">
         <Form.Label>Cabin Class</Form.Label>
-        <Form.Control type="text" placeholder="Enter Price"  name='from' />
+        <Form.Control type="text" placeholder="Enter Cabin"  name='from' />
         <select className="form-select" aria-label="Default select example">
             <option >Select Cabin Class</option>
             <option value="First Class">First Class</option>
@@ -36,7 +36,7 @@ const FilterSection = () => {
       </Form.Group> */}
       <Form.Group className="mb-2" controlId="formBasicEmail1">
         <Form.Label>AirLine</Form.Label>
-        <Form.Control type="text" placeholder="Enter Price"  name='from1' />
+        <Form.Control type="text" placeholder="Enter AirLines"  name='from1' />
         <select className="form-select" aria-label="Default select example11">
             <option >Select AirLine</option>
             <option value="Air India">Air India</option>
