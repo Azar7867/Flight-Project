@@ -1,5 +1,6 @@
 import React from 'react'
 import {Button,Card,CardFooter,Form} from 'react-bootstrap'
+import './FilterSection.css';
 const FilterSection = () => {
   return (
     <div className='h-100'>

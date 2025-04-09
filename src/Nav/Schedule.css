@@ -1,0 +1,22 @@
+/* Schedule.css */
+
+.schedule-page {
+    background: linear-gradient(145deg, #f3f6fb, #dbe9f6);
+    min-height: 100vh;
+    padding-top: 50px;
+  }
+  
+  .table th,
+  .table td {
+    vertical-align: middle;
+  }
+  
+  .table thead th {
+    font-weight: bold;
+  }
+  
+  .badge {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  

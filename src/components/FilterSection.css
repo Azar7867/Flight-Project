@@ -1,0 +1,36 @@
+
+@keyframes fadeSlideIn{
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animation on mount */
+  .card-design{
+    animation: fadeSlideIn 0.8s ease-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Optional: Add hover lift effect */
+  .card-design:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button animation */
+  .btn-color{
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-color:hover{
+    background-color: #647da3;
+  }
+  

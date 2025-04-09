@@ -51,7 +51,7 @@ const Main = () => {
 
       {
         loading ?<>
-        <Lottie animationData={animationLooking} style={{height:"150px" }}/>
+        <Lottie animationData={animationLooking} style={{height:"120px", margin:'90px' }}/>
         </>:<>
         
       <div className='m-3'>

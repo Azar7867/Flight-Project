@@ -1,0 +1,73 @@
+/* === Animations === */
+
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-left {
+    animation: slideInLeft 1s ease-out;
+  }
+  
+  .animate-right {
+    animation: slideInRight 1s ease-out;
+  }
+  
+  /* === About Section Styling === */
+  .about-section {
+    background-color: #f8f9fa;
+    flex: 1;
+  }
+  
+  /* List spacing */
+  .about-section ul {
+    padding-left: 1.5rem;
+  }
+  
+  .about-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* === Sticky Footer Fix === */
+  body, html, #root {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  footer {
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0d6efd; /* Bootstrap primary */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  }
+  

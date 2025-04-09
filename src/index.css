@@ -66,6 +66,8 @@ body{
   border: var(--car-design-border) !important;
   background-color: var(--car-design-border) !important;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.75) !important;
+  backdrop-filter: brightness(40%) !important;
+  backdrop-filter: blur(5px) !important;
 }
 
 .fs-7{
